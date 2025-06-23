@@ -31,6 +31,46 @@ How can the developer improve the performance of these requests? (Choose two.)
 
 ## Old Question 2
 
+359. A company has an application that uses an AWS Lambda function to process data. A developer must implement encryption in transit for all sensitive configuration data, such as API keys, that is stored in the application. The developer creates an AWS Key Management Service (AWS KMS) customer managed key.
+
+What should the developer do next to meet the encryption requirement?
+<ol type="A">
+ <li>Create parameters of the String type in AWS Systems Manager Parameter Store. For each parameter, specify the KMS key ID to encrypt the parameter in transit. Reference the GetParameter API call in the Lambda environment variables.</li>
+ <li>Create secrets in AWS Secrets Manager by using the customer managed KMS key. Create a new Lambda function and set up a Lambda layer. Configure the Lambda layer to retrieve the values from Secrets Manager.</li>
+ <li>Create objects in Amazon S3 for each sensitive data field. Specify the customer managed KMS key to encrypt the object. Configure the Lambda function to retrieve the objects from Amazon S3 during data processing.</li>
+ <li>Create encrypted Lambda environment variables. Specify the customer managed KMS key to encrypt the variables. Enable encryption helpers for encryption in transit. Grant permission to the Lambda function's execution role to access the KMS key.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  D
+</details>
+
+451. A developer is using an AWS Lambda function to process data. The developer needs to extract custom metrics about processing times from the Lambda logs. The developer needs to analyze the metrics, set alarms, and detect issues in real time.
+
+Which solution will meet these requirements?
+<ol type="A">
+ <li>Publish custom metric data to AWS CloudTrail by using the PutMetricData API operation. Classify and collect the metrics. Create graphs and alarms in CloudTrail for the custom metrics.
+</li>
+ <li>Use the open source client libraries provided by Amazon to generate the logs in the Amazon CloudWatch embedded metric format. Use CloudWatch to create the required graphs and alarms for the custom metrics.</li>
+ <li>Use Amazon CloudWatch Logs Insights to create custom metrics by querying the logs that come from the Lambda function. Use CloudWatch to create the required graphs and alarms for the custom metrics.</li>
+ <li>Create an Amazon Kinesis data stream to stream log events in real time from Lambda. Specify an Amazon S3 bucket as the destination for the Kinesis data stream. Use Amazon CloudWatch to visualize the log data and to set alarms.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  B
+</details>
+
+463. An application is experiencing performance issues based on increased demand. This increased demand is on read-only historical records pulled from an Amazon RDS-hosted database with custom views and queries. A developer must improve performance without changing the database structure.
+
+Which approach will improve performance and MINIMIZE management overhead?
+<ol type="A">
+<li>Deploy Amazon DynamoDB, move all the data, and point to DynamoDB.</li>
+<li>Deploy Amazon ElastiCache (Redis OSS) and cache the data for the application.</li>
+<li>Deploy Memcached on Amazon EC2 and cache the data for the application.</li>
+<li>Deploy Amazon DynamoDB Accelerator (DAX) on Amazon RDS to improve cache performance.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  B
+</details>
+
 465. A company’s AWS accounts are in an organization in AWS Organizations. An application in Account A uses environment variables that are stored as parameters in AWS Systems Manager Parameter Store. A developer is creating a new application in Account B that needs to use the same environment variables.
 
 The application in Account B needs access to the parameters in Account A without duplicating the parameters into Account B.
@@ -61,4 +101,17 @@ Which solution will provide the security team with the required notification abo
 </ol>
 <details><summary>Show Correct Answer</summary>
   A
+</details>
+
+548. A developer is creating a new application that will give users the ability to upload documents to Amazon S3. The contents of the documents must not be accessible to any third party.
+
+Which type of encryption will meet this requirement?
+<ol type="A">
+ <li>Client-side encryption by using the S3 Encryption Client with a Raw RSA wrapping key that is stored on the user’s device</li>
+ <li>Server-side encryption with S3 managed keys (SSE-S3)</li>
+ <li>Server-side encryption with AWS KMS keys (SSE-KMS)</li>
+ <li>Dual-layer server-side encryption with AWS KMS keys (DSSE-KMS)</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  C
 </details>
