@@ -14,6 +14,8 @@ What must the developer do to complete these tasks?
   C
 </details>
 
+***
+
 22. A developer is working on a web application that runs on Amazon Elastic Container Service (Amazon ECS) and uses an Amazon DynamoDB table to store data.
 The application performs a large number of read requests against a small set of the table data.
 How can the developer improve the performance of these requests? (Choose two.)
@@ -46,6 +48,8 @@ What should the developer do to meet these requirements?
   D
 </details>
 
+***
+
 359. A company has an application that uses an AWS Lambda function to process data. A developer must implement encryption in transit for all sensitive configuration data, such as API keys, that is stored in the application. The developer creates an AWS Key Management Service (AWS KMS) customer managed key.
 
 What should the developer do next to meet the encryption requirement?
@@ -58,6 +62,8 @@ What should the developer do next to meet the encryption requirement?
 <details><summary>Show Correct Answer</summary>
   D
 </details>
+
+***
 
 451. A developer is using an AWS Lambda function to process data. The developer needs to extract custom metrics about processing times from the Lambda logs. The developer needs to analyze the metrics, set alarms, and detect issues in real time.
 
@@ -73,6 +79,8 @@ Which solution will meet these requirements?
   B
 </details>
 
+***
+
 463. An application is experiencing performance issues based on increased demand. This increased demand is on read-only historical records pulled from an Amazon RDS-hosted database with custom views and queries. A developer must improve performance without changing the database structure.
 
 Which approach will improve performance and MINIMIZE management overhead?
@@ -85,6 +93,8 @@ Which approach will improve performance and MINIMIZE management overhead?
 <details><summary>Show Correct Answer</summary>
   B
 </details>
+
+***
 
 465. A company’s AWS accounts are in an organization in AWS Organizations. An application in Account A uses environment variables that are stored as parameters in AWS Systems Manager Parameter Store. A developer is creating a new application in Account B that needs to use the same environment variables.
 
@@ -102,6 +112,8 @@ Which solution will meet these requirements with the LEAST operational overhead?
   C
 </details>
 
+***
+
 502. A company generates SSL certificates from a third-party provider. The company imports the certificates into AWS Certificate Manager (ACM) to use with public web applications.
 
 A developer must implement a solution to notify the company’s security team 90 days before an imported certificate expires. The company already has configured an Amazon Simple Queue Service (Amazon SQS) queue. The company also has configured an Amazon Simple Notification Service (Amazon SNS) topic that has the security team’s email address as a subscriber.
@@ -118,6 +130,8 @@ Which solution will provide the security team with the required notification abo
   A
 </details>
 
+***
+
 548. A developer is creating a new application that will give users the ability to upload documents to Amazon S3. The contents of the documents must not be accessible to any third party.
 
 Which type of encryption will meet this requirement?
@@ -130,3 +144,5 @@ Which type of encryption will meet this requirement?
 <details><summary>Show Correct Answer</summary>
   C
 </details>
+
+***
