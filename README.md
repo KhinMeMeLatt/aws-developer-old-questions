@@ -31,6 +31,21 @@ How can the developer improve the performance of these requests? (Choose two.)
 
 ## Old Question 2
 
+302. A company runs a serverless application on AWS. The application includes an AWS Lambda function. The Lambda function processes data and stores the data in an Amazon RDS for PostgreSQL database. A developer created a user credentials in the database for the application.
+
+The developer needs to use AWS Secrets Manager to manage the user credentials. The password must to be rotated on a regular basis. The solution needs to ensure that there is high availability and no downtime for the application during secret rotation.
+
+What should the developer do to meet these requirements?
+<ol type="A">
+ <li>Configure managed rotation with the single user rotation strategy.</li>
+ <li>Configure managed rotation with the alternating users rotation strategy.</li>
+ <li>Configure automatic rotation with the single user rotation strategy.</li>
+ <li>Configure automatic rotation with the alternating users rotation strategy.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  D
+</details>
+
 359. A company has an application that uses an AWS Lambda function to process data. A developer must implement encryption in transit for all sensitive configuration data, such as API keys, that is stored in the application. The developer creates an AWS Key Management Service (AWS KMS) customer managed key.
 
 What should the developer do next to meet the encryption requirement?
