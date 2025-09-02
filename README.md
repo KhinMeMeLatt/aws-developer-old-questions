@@ -1,6 +1,38 @@
 # aws-developer-old-questions
 ## Old Question 1
 
+11. A developer creates a customer managed key for multiple AWS users to encrypt data in Amazon S3. The developer configures Amazon Simple Notification
+Service (Amazon SNS) to publish a message if key deletion is scheduled. The developer needs to preserve any SNS messages that cannot be delivered so that those messages can be reprocessed.
+Which AWS service or feature should the developer use to meet this requirement?
+
+<ol type="A">
+ <li>Amazon Simple Email Service (Amazon SES)</li>
+ <li>AWS Lambda</li>
+ <li>Amazon Simple Queue Service (Amazon SQS)</li>
+ <li>Amazon CloudWatch alarm</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  C
+</details>
+
+***
+
+14. A company is using AWS Elastic Beanstalk to deploy a three-tier application. The application uses an Amazon RDS DB instance as the database tier. The company wants to decouple the DB instance from the Elastic Beanstalk environment.
+Which combination of steps should a developer lake to meet this requirement? (Choose two.)
+
+<ol type="A">
+ <li>Create a new Elastic Beanstalk environment that connects to the DB instance.</li>
+ <li>Create a new DB instance from a snapshot of the previous DB instance.</li>
+ <li>Use the Elastic Beanstalk CLI to decouple the DB instance.</li>
+ <li>Use the AWS CLI to decouple the DB instance.</li>
+ <li>Modify the current Elastic Beanstalk environment to connect to the DB instance.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  A, B
+</details>
+
+***
+
 21. A developer needs to write an AWS CloudFormation template on a local machine and deploy a CloudFormation stack to AWS.
 What must the developer do to complete these tasks?
 
@@ -64,6 +96,24 @@ Which solution will meet these requirements?
 
 ***
 
+260. A developer is writing an application that will retrieve sensitive data from a third-party system. The application will format the data into a PDF file. The PDF file could be more than 1 MB. The application will encrypt the data to disk by using AWS Key Management Service (AWS KMS). The application will decrypt the file when a user requests to download it. The retrieval and formatting portions of the application are complete.
+
+The developer needs to use the GenerateDataKey API to encrypt the PDF file so that the PDF file can be decrypted later. The developer needs to use an AWS KMS symmetric customer managed key for encryption.
+
+Which solutions will meet these requirements?
+
+<ol type="A">
+ <li>Write the encrypted key from the GenerateDataKey API to disk for later use. Use the plaintext key from the GenerateDataKey API and a symmetric encryption algorithm to encrypt the file.</li>
+ <li>Write the plain text key from the GenerateDataKey API to disk for later use. Use the encrypted key from the GenerateDataKey API and a symmetric encryption algorithm to encrypt the file.</li>
+ <li>Write the encrypted key from the GenerateDataKey API to disk for later use. Use the plaintext key from the GenerateDataKey API to encrypt the file by using the KMS Encrypt API.</li>
+ <li>Write the plain text key from the GenerateDataKey API to disk for later use. Use the encrypted key from the GenerateDataKey API to encrypt the file by using the KMS Encrypt API.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  A
+</details>
+
+***
+
 262. A company wants to test its web application more frequently. The company deploys the application by using a separate AWS CloudFormation stack for each environment. The company deploys the same CloudFormation template to each stack as the application progresses through the development lifecycle.
 
 A developer needs to build in notifications for the quality assurance (QA) team. The developer wants the notifications to occur for new deployments in the final preproduction environment.
@@ -92,6 +142,24 @@ Which solution will meet these requirements?
 </ol>
 <details><summary>Show Correct Answer</summary>
   C
+</details>
+
+***
+
+294. A company's developer has deployed an application in AWS by using AWS CloudFormation. The CloudFormation stack includes parameters in AWS Systems Manager Parameter Store that the application uses as configuration settings. The application can modify the parameter values.
+
+When the developer updated the stack to create additional resources with tags, the developer noted that the parameter values were reset and that the values ignored the latest changes made by the application. The developer needs to change the way the company deploys the CloudFormation stack. The developer also needs to avoid resetting the parameter values outside the stack.
+
+Which solution will meet these requirements with the LEAST development effort?
+
+<ol type="A">
+ <li>Modify the CloudFormation stack to set the deletion policy to Retain for the Parameter Store parameters.</li>
+ <li>Create an Amazon DynamoDB table as a resource in the CloudFormation stack to hold configuration data for the application. Migrate the parameters that the application is modifying from Parameter Store to the DynamoDB table.</li>
+ <li>Create an Amazon RDS DB instance as a resource in the CloudFormation stack. Create a table in the database for parameter configuration. Migrate the parameters that the application is modifying from Parameter Store to the configuration table.</li>
+ <li>Modify the CloudFormation stack policy to deny updates on Parameter Store parameters.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  A
 </details>
 
 ***
@@ -142,6 +210,25 @@ What should the developer do next to meet the encryption requirement?
 </ol>
 <details><summary>Show Correct Answer</summary>
   D
+</details>
+
+***
+
+373. A company has a serverless application that uses Amazon API Gateway backed by AWS Lambda proxy integration. The company is developing several backend APIs. The company needs a landing page to provide an overview of navigation to the APIs.
+
+A developer creates a new/LandingPage resource and a new GET method that uses mock integration.
+
+What should the developer do next to meet these requirements?
+
+<ol type="A">
+ <li>Configure the integration request mapping template with Content-Type of text/html and statusCode of 200. Configure the integration response mapping template with Content-Type of application/json. In the integration response mapping template, include the LandingPage HTML code that references the APIs.</li>
+ <li>Configure the integration request mapping template with Content-Type of application/json. In the integration request mapping template, include the LandingPage HMTL code that references the APIs. Configure the integration response mapping template with Content-Type of text/html and statusCode of 200.</li>
+ <li>Configure the integration request mapping template with Content-Type of application/json and statusCode of 200. Configure the integration response mapping template with Content-Type of text/html. In the integration response mapping template, include the LandingPage HTML code that references the APIs.
+</li>
+ <li>Configure the integration request mapping template with Content-Type of text/html. In the integration request mapping template, include the LandingPage HTML code that references the APIs. Configure the integration response mapping template with Content-Type of application/json and statusCode of 200.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  C
 </details>
 
 ***
