@@ -96,6 +96,22 @@ Which solution will meet these requirements?
 
 ***
 
+90. A company moved some of its secure files to a private Amazon S3 bucket that has no public access. The company wants to develop a serverless application that gives its employees the ability to log in and securely share the files with other users.
+
+Which AWS feature should the company use to share and access the files securely?
+
+<ol type="A">
+ <li>Amazon Cognito user pool</li>
+ <li>S3 presigned URLs</li>
+ <li>S3 bucket policy</li>
+ <li>Amazon Cognito identity pool</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  B
+</details>
+
+***
+
 153. A company uses a custom root certificate authority certificate chain (Root CA Cert) that is 10 KB in size to generate SSL certificates for its on-premises HTTPS endpoints. One of the company’s cloud-based applications has hundreds of AWS Lambda functions that pull data from these endpoints. A developer updated the trust store of the Lambda execution environment to use the Root CA Cert when the Lambda execution environment is initialized. The developer bundled the Root CA Cert as a text file in the Lambda deployment bundle.
 
 After 3 months of development, the Root CA Cert is no longer valid and must be updated. The developer needs a more efficient solution to update the Root CA Cert for all deployed Lambda functions. The solution must not include rebuilding or updating all Lambda functions that use the Root CA Cert. The solution must also work for all development, testing, and production environments. Each environment is managed in a separate AWS account.
@@ -111,6 +127,22 @@ Which combination of steps should the developer take to meet these requirements 
 </ol>
 <details><summary>Show Correct Answer</summary>
   A, E
+</details>
+
+***
+
+198. A developer has created an AWS Lambda function that makes queries to an Amazon Aurora MySQL DB instance. When the developer performs a test, the DB instance shows an error for too many connections.
+
+Which solution will meet these requirements with the LEAST operational effort?
+
+<ol type="A">
+ <li>Create a read replica for the DB instance. Query the replica DB instance instead of the primary DB instance.</li>
+ <li>Migrate the data to an Amazon DynamoDB database.</li>
+ <li>Configure the Amazon Aurora MySQL DB instance for Multi-AZ deployment.</li>
+ <li>Create a proxy in Amazon RDS Proxy. Query the proxy instead of the DB instance.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  D
 </details>
 
 ***
@@ -316,6 +348,70 @@ Which solution will provide the security team with the required notification abo
   A
 </details>
 
+***
+
+543. A company has an AWS Step Functions state machine named myStateMachine. The company configured a service role for Step Functions.
+
+The developer must ensure that only the myStateMachine state machine can assume the service role.
+
+Which statement should the developer add to the trust policy to meet this requirement?
+
+<ol type="A">
+ <li>
+  <code>
+  "Condition":{
+    "ArnLike":{
+       "aws:SourceArn":"arn:aws:states:ap-south-1:1111111111111:stateMachine:myStateMachine"
+    }
+  }
+  </code>
+ </li>
+ <li>
+  <code>
+   "Condition":{
+    "ArnLike":{
+       "aws:SourceArn":"arn:aws:states:ap-south-1:*:stateMachine:myStateMachine"
+    }
+   }
+  </code>
+ </li>
+ <li>
+  <code>
+   "Condition":{
+    "StringEquals":{
+      "aws:SourceAccount":"111111111"
+     }
+   }
+  </code>
+ </li>
+ <li>
+   <code>
+    "Condition":{
+     "StringNotEquals":{
+      "aws:SourceArn":"arn:aws:states:ap-south-1:1111111111111:stateMachine:myStateMachine"
+      }
+    }
+   </code>
+ </li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  A
+</details>
+
+***
+547. A developer is designing an event-driven architecture. An AWS Lambda function that processes data needs to push processed data to a subset of four consumer Lambda functions. The data must be routed based on the value of one field in the data.
+
+Which solution will meet these requirements with the LEAST operational overhead?
+
+<ol type="A">
+ <li>Create an Amazon Simple Queue Service (Amazon SQS) queue and event source mapping for each consumer Lambda function. Add message routing logic to the data-processing Lambda function.</li>
+ <li>Create an Amazon Simple Notification Service (Amazon SNS) topic. Subscribe the four consumer Lambda functions to the topic. Add message filtering logic to each consumer Lambda function. Subscribe the data-processing Lambda function to the SNS topic.</li>
+ <li>Create a separate Amazon Simple Notification Service (Amazon SNS) topic and subscription for each consumer Lambda function. Add message routing logic to the data-processing Lambda function to publish to the appropriate topic.</li>
+ <li>Create a single Amazon Simple Notification Service (Amazon SNS) topic. Subscribe the four consumer Lambda functions to the topic. Add SNS subscription filter policies to each subscription. Configure the data-processing Lambda function to publish to the topic.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  D
+</details>
 ***
 
 548. A developer is creating a new application that will give users the ability to upload documents to Amazon S3. The contents of the documents must not be accessible to any third party.
