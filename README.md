@@ -452,6 +452,22 @@ What should the developer do to improve performance?
 
 ***
 
+519. A developer is writing a mobile application that allows users to view images from an S3 bucket. The users must be able to log in with their Amazon login, as well as supported social media accounts.
+
+How can the developer provide this authentication functionality?
+
+<ol type="A">
+ <li>Use Amazon Cognito with web identity federation.</li>
+ <li>Use Amazon Cognito with SAML-based identity federation.</li>
+ <li>Use IAM access keys and secret keys in the application code to allow Get* on the S3 bucket.</li>
+ <li>Use AWS STS AssumeRole in the application code and assume a role with Get* permissions on the S3 bucket.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  A
+</details>
+
+****
+
 543. A company has an AWS Step Functions state machine named myStateMachine. The company configured a service role for Step Functions.
 
 The developer must ensure that only the myStateMachine state machine can assume the service role.
