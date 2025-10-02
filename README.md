@@ -299,6 +299,32 @@ Which solution will meet these requirements?
 
 ***
 
+454. A developer built an application that uses AWS Lambda functions to process images. The developer wants to improve image processing times throughout the day.
+
+The developer needs to create an Amazon CloudWatch Logs Insights query that shows the average, slowest, and fastest processing time in 1-minute intervals.
+
+Which query will meet these requirements?
+
+<ol type="A">
+ <li>
+  <code>filter @type = "REPORT" | stats avg(@duration), max(@duration), min(@duration) by bin(1m)</code>
+ </li>
+ <li>
+  <code>filter @type = "DISPLAY" | stats avg(@duration), max(@duration), min(@duration) by bin(5m)</code>
+ </li>
+ <li>
+  <code>filter @type = "STATS" | stats avg(@duration), max(@duration), min(@duration) by bin(5m)</code>
+ </li>
+ <li>
+  <code>filter @type = "PATTERN" | stats avg(@duration), max(@duration), min(@duration) by bin(1m)</code>
+ </li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  A
+</details>
+
+***
+
 463. An application is experiencing performance issues based on increased demand. This increased demand is on read-only historical records pulled from an Amazon RDS-hosted database with custom views and queries. A developer must improve performance without changing the database structure.
 
 Which approach will improve performance and MINIMIZE management overhead?
@@ -328,6 +354,22 @@ Which solution will meet these requirements with the LEAST operational overhead?
 </ol>
 <details><summary>Show Correct Answer</summary>
   C
+</details>
+
+***
+
+489. A company’s application includes an Amazon DynamoDB table for product orders. The table has a primary partition key of orderId and has no sort key. The company is adding a new feature that requires the application to query the table by using the customerId attribute.
+
+Which solution will provide this query functionality?
+
+<ol type="A">
+ <li>Change the existing primary key by setting customerId as the sort key.</li>
+ <li>Create a new global secondary index (GSI) on the table with a partition key of customerId.</li>
+ <li>Create a new local secondary index (LSI) on the table with a partition key of customerId.</li>
+ <li>Create a new local secondary index (LSI) on the table with a partition key of orderId and a sort key of customerId.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  B
 </details>
 
 ***
