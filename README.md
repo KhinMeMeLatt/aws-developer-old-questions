@@ -427,6 +427,31 @@ Which solution will provide the security team with the required notification abo
 
 ***
 
+507. A developer has implemented an AWS Lambda function that inserts new customers into an Amazon RDS database. The function is expected to run hundreds of times each hour. The function and RDS database are in the same VPC. The function is configured to use 512 MB of RAM and is based on the following pseudo code:
+     <code>
+      def lambda_handler(event, context):
+          db = database.connect()
+          db.statement('INSERT INTO Customers (CustomerName) VALUES (event.name)')
+          db.execute()
+          db.close()
+     </code>
+     
+After successfully testing the function multiple times, the developer notices that the execution time is longer than expected.
+
+What should the developer do to improve performance?
+
+<ol type="A">
+ <li>Increase the reserved concurrency of the Lambda function.</li>
+ <li>Increase the size of the RDS database to facilitate an increased number of database connections each hour.</li>
+ <li>Move the database connection and close statement out of the handler. Place the connection in the global space.</li>
+ <li>Replace Amazon RDS with Amazon DynamoDB to implement control over the number of writes per second.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  C
+</details>
+
+***
+
 543. A company has an AWS Step Functions state machine named myStateMachine. The company configured a service role for Step Functions.
 
 The developer must ensure that only the myStateMachine state machine can assume the service role.
