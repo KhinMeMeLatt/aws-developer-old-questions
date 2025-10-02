@@ -358,6 +358,25 @@ Which solution will meet these requirements with the LEAST operational overhead?
 
 ***
 
+486. A developer is creating an AWS Step Functions state machine to handle an order processing workflow. When the state machine receives an order, the state machine pauses until the order has been confirmed. A record that is added to an Amazon DynamoDB table by another service confirms each order.
+
+The developer must complete the order processing workflow.
+
+Which solution will meet this requirement?
+
+<ol type="A">
+ <li>Update the state machine to query the DynamoDB table by using the DynamoDB GetItem state to determine whether a record exists. If the record does exist, continue to the next state. If the record does not exist, wait 5 minutes and check again.
+</li>
+ <li>Subscribe an AWS Lambda function to a DynamoDB table stream. Configure the Lambda function to run when a new record is added to the table. When the Lambda function receives the appropriate record, run the redrive execution command on the running state machine.</li>
+ <li>Subscribe an AWS Lambda function to the DynamoDB table stream. Configure the Lambda function to run when a new record is added to the table. When the Lambda function receives the appropriate record, stop the current state machine invocation and start a new invocation.</li>
+ <li>Invoke an AWS Lambda function from the state machine. Configure the Lambda function to continuously poll the DynamoDB table for the appropriate record and to return when a record exists. Continue the state machine invocation when the Lambda function returns. If the Lambda function times out, then fail the state machine.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  A
+</details>
+
+***
+
 489. A company’s application includes an Amazon DynamoDB table for product orders. The table has a primary partition key of orderId and has no sort key. The company is adding a new feature that requires the application to query the table by using the customerId attribute.
 
 Which solution will provide this query functionality?
