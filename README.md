@@ -428,6 +428,7 @@ Which solution will meet these requirements with the LEAST operational overhead?
 <details><summary>Show Correct Answer</summary>
   D
 </details>
+
 ***
 
 548. A developer is creating a new application that will give users the ability to upload documents to Amazon S3. The contents of the documents must not be accessible to any third party.
