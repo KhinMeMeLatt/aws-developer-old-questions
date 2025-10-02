@@ -332,6 +332,22 @@ Which solution will meet these requirements with the LEAST operational overhead?
 
 ***
 
+499. A company is developing a new application that uses Amazon EC2, Amazon S3, and AWS Lambda resources. The company wants to allow employees to access the AWS Management Console by using existing credentials that the company stores and manages in an on-premises Microsoft Active Directory. Each employee must have a specific level of access to the AWS resources that is based on the employee’s role.
+
+Which solution will meet these requirements with the LEAST operational overhead?
+
+<ol type="A">
+ <li>Configure AWS Directory Service to create an Active Directory in AWS Directory Service for Microsoft Active Directory. Establish a trust relationship with the on-premises Active Directory. Configure IAM roles and trust policies to give the employees access to the AWS resources.</li>
+ <li>Use LDAP to directly integrate the on-premises Active Directory with AWS Identity and Access Management (IAM). Map Active Directory groups to IAM roles to control access to AWS resources.</li>
+ <li>Implement a custom identity broker to authenticate users into the on-premises Active Directory. Configure the identity broker to use AWS Security Token Service (AWS STS) to grant authorized users IAM role based access to the AWS resources.</li>
+ <li>Configure Amazon Cognito to federate users into the on-premises Active Directory. Use Cognito user pools to manage user identities and to manage user access to the AWS resources.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  A
+</details>
+
+***
+
 502. A company generates SSL certificates from a third-party provider. The company imports the certificates into AWS Certificate Manager (ACM) to use with public web applications.
 
 A developer must implement a solution to notify the company’s security team 90 days before an imported certificate expires. The company already has configured an Amazon Simple Queue Service (Amazon SQS) queue. The company also has configured an Amazon Simple Notification Service (Amazon SNS) topic that has the security team’s email address as a subscriber.
