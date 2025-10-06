@@ -503,6 +503,22 @@ Which solution will meet these requirements?
 
 ****
 
+534. A developer is creating an AWS Lambda function that needs network access to private resources in a VPC.
+
+Which solution will provide this access with the LEAST operational overhead?
+
+<ol type="A">
+ <li>Attach the Lambda function to the VPC through private subnets. Create a security group that allows network access to the private resources. Associate the security group with the Lambda function.</li>
+ <li>Configure the Lambda function to route traffic through a VPN connection. Create a security group that allows network access to the private resources. Associate the security group with the Lambda function.</li>
+ <li>Configure a VPC endpoint connection for the Lambda function. Set up the VPC endpoint to route traffic through a NAT gateway.</li>
+ <li>Configure an AWS PrivateLink endpoint for the private resources. Configure the Lambda function to reference the PrivateLink endpoint.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  A
+</details>
+
+****
+
 535. A developer needs to automate deployments for a serverless, event-based workload. The developer needs to create standardized templates to define the infrastructure and to test the functionality of the workload locally before deployment
 
 The developer already uses a pipeline in AWS CodePipeline. The developer needs to incorporate any other infrastructure changes into the existing pipeline.
