@@ -485,6 +485,25 @@ Which steps should be taken to achieve this? (Choose two.)
 
 ****
 
+
+535. A developer needs to automate deployments for a serverless, event-based workload. The developer needs to create standardized templates to define the infrastructure and to test the functionality of the workload locally before deployment
+
+The developer already uses a pipeline in AWS CodePipeline. The developer needs to incorporate any other infrastructure changes into the existing pipeline.
+
+Which solution will meet these requirements?
+
+<ol type="A">
+ <li>Create an AWS Serverless Application Model (AWS SAM) template. Configure the pipeline stages in CodePipeline to run the necessary AWS SAM CLI commands to deploy the serverless workload.</li>
+ <li>Create an AWS Step Functions workflow template based on the infrastructure by using the Amazon States Language. Start the Step Functions state machine from the existing pipeline.</li>
+ <li>Create an AWS CloudFormation template. Use the existing pipeline workflow to build a pipeline for AWS CloudFormation stacks.</li>
+ <li>Create an AWS Serverless Application Model (AWS SAM) template. Use an automated script to deploy the serverless workload by using the AWS SAM CLI deploy command.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  A
+</details>
+
+****
+
 543. A company has an AWS Step Functions state machine named myStateMachine. The company configured a service role for Step Functions.
 
 The developer must ensure that only the myStateMachine state machine can assume the service role.
@@ -561,6 +580,23 @@ Which type of encryption will meet this requirement?
 </ol>
 <details><summary>Show Correct Answer</summary>
   C
+</details>
+
+***
+
+554. A developer has an application that runs in AWS Account A. The application must retrieve an AWS Secrets Manager secret that is encrypted by an AWS Key Management Service (AWS KMS) key from AWS Account B. The application’s role has permissions to access the secret in Account B.
+
+The developer must add a statement to the KMS key’s key policy to allow the role in Account A to use the KMS key in Account B. The permissions must grant least privilege access to the role.
+
+Which permissions will meet these requirements?
+<ol type="A">
+ <li>kms:Decrypt and kms:DescribeKey</li>
+ <li>secretsmanager:DescribeSecret and secretsmanager:GetSecretValue</li>
+ <li>kms:*</li>
+ <li>secretsmanager:*</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  A
 </details>
 
 ***
