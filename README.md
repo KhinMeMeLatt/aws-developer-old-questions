@@ -485,6 +485,23 @@ Which steps should be taken to achieve this? (Choose two.)
 
 ****
 
+533. A developer is deploying an application on an Amazon Elastic Container Service (Amazon ECS) cluster that uses AWS Fargate. The developer is using a Docker container with an Ubuntu image.
+
+The developer needs to implement a solution to store application data that is available from multiple ECS tasks. The application data must remain accessible after the container is terminated.
+
+Which solution will meet these requirements?
+
+<ol type="A">
+ <li>Attach an Amazon FSx for Windows File Server volume to the container definition.</li>
+ <li>Specify the DockerVolumeConfiguration parameter in the ECS task definition to attach a Docker volume.</li>
+ <li>Create an Amazon Elastic File System (Amazon EFS) file system. Specify the mountPoints attribute and the efsVolumeConfiguration attribute in the ECS task definition.</li>
+ <li>Create an Amazon Elastic Block Store (Amazon EBS) volume. Specify the mount point configuration in the ECS task definition.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  C
+</details>
+
+****
 
 535. A developer needs to automate deployments for a serverless, event-based workload. The developer needs to create standardized templates to define the infrastructure and to test the functionality of the workload locally before deployment
 
@@ -503,6 +520,24 @@ Which solution will meet these requirements?
 </details>
 
 ****
+
+536. A developer is creating a stock trading application. The developer needs a solution to send text messages to application users to confirmation when a trade has been completed.
+
+The solution must deliver messages in the order a user makes stock trades. The solution must not send duplicate messages.
+
+Which solution will meet these requirements?
+
+<ol type="A">
+ <li>Configure the application to publish messages to an Amazon Data Firehose delivery stream. Configure the delivery stream to have a destination of each user’s mobile phone number that is passed in the trade confirmation message.</li>
+ <li>Create an Amazon Simple Queue Service (Amazon SQS) FIFO queue. Use the SendMessageIn API call to send the trade confirmation messages to the queue. Use the SendMessageOut API to send the messages to users by using the information provided in the trade confirmation message.</li>
+ <li>Configure a pipe in Amazon EventBridge Pipes. Connect the application to the pipe as a source. Configure the pipe to use each user’s mobile phone number as a target. Configure the pipe to send incoming events to the users.</li>
+ <li>Create an Amazon Simple Notification Service (SNS) FIFO topic. Configure the application to use the AWS SDK to publish notifications to the SNS topic to send SMS messages to the users.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  D
+</details>
+
+***
 
 543. A company has an AWS Step Functions state machine named myStateMachine. The company configured a service role for Step Functions.
 
