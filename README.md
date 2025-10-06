@@ -283,6 +283,23 @@ What should the developer do next to meet these requirements?
 
 ***
 
+445. A developer is creating a script to automate the deployment process for a serverless application. The developer wants to use an existing AWS Serverless Application Model (AWS SAM) template for the application.
+
+What should the developer use for the project? (Choose two.)
+
+<ol type="A">
+ <li>Call aws cloudformation package to create the deployment package. Call aws cloudformation deploy to deploy the package afterward.</li>
+ <li>Call sam package to create the deployment package. Call sam deploy to deploy the package afterward.</li>
+ <li>Call aws s3 cp to upload the AWS SAM template to Amazon S3. Call aws lambda update-function-code to create the application.</li>
+ <li>Create a ZIP package locally and call aws serverlessrepo create-applicatiion to create the application.</li>
+ <li>Create a ZIP package and upload it to Amazon S3. Call aws cloudformation create-stack to create the application.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  A, B
+</details>
+
+***
+
 451. A developer is using an AWS Lambda function to process data. The developer needs to extract custom metrics about processing times from the Lambda logs. The developer needs to analyze the metrics, set alarms, and detect issues in real time.
 
 Which solution will meet these requirements?
