@@ -468,6 +468,23 @@ How can the developer provide this authentication functionality?
 
 ****
 
+525. A development team is designing a mobile app that requires multi-factor authentication.
+
+Which steps should be taken to achieve this? (Choose two.)
+
+<ol type="A">
+ <li>Use Amazon Cognito to create a user pool and create users in the user pool.</li>
+ <li>Send multi-factor authentication text codes to users with the Amazon SNS Publish API call in the app code.</li>
+ <li>Enable multi-factor authentication for the Amazon Cognito user pool.</li>
+ <li>Use AWS IAM to create IAM users.</li>
+ <li>Enable multifactor authentication for the users created in AWS IAM.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  A, C
+</details>
+
+****
+
 543. A company has an AWS Step Functions state machine named myStateMachine. The company configured a service role for Step Functions.
 
 The developer must ensure that only the myStateMachine state machine can assume the service role.
