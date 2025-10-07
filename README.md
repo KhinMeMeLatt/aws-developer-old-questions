@@ -572,6 +572,22 @@ Which solution will meet these requirements?
 
 ***
 
+537. A developer is deploying a new Node.js AWS Lambda function that is not connected to a VPC. The Lambda function needs to connect to and query an Amazon Aurora database that is not publicly accessible. The developer is expecting unpredictable surges in database traffic.
+
+What should the developer do to give the Lambda function access to the database?
+
+<ol type="A">
+ <li>Configure the Lambda function to use an Amazon RDS proxy.</li>
+ <li>Configure a NAT gateway. Attach the NAT gateway to the Lambda function.</li>
+ <li>Enable public access on the Aurora database. Configure a security group on the database to allow outbound access for the database engine’s port.</li>
+ <li>Enable VPC access for the Lambda function. Attach the Lambda function to a new security group that does not have rules.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  A
+</details>
+
+***
+
 543. A company has an AWS Step Functions state machine named myStateMachine. The company configured a service role for Step Functions.
 
 The developer must ensure that only the myStateMachine state machine can assume the service role.
