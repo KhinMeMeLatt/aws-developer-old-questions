@@ -196,6 +196,22 @@ Which solution will meet these requirements?
 
 ***
 
+271. A company is building a serverless microservice for an existing application that uses AWS Lambda functions and Amazon API Gateway. The microservice needs to automate an on-premises identity provider (IdP) that supports the OpenID Connect (OIDC) standard.
+
+What should the company do to implement the API authorization mechanism with the LEAST operational overhead?
+
+<ol type="A">
+ <li>Use an API Gateway HTTP API to invoke the Lambda functions. Set the JSON Web Token (JWT) issuer as the public OIDC endpoint of the on-premises IdP.</li>
+ <li>Use an API Gateway HTTP API to invoke the Lambda functions. Create an Amazon Cognito identity pool. Create a federation between the identity pool and the on-premises IdP. Set the identity pool as the JSON Web Token (JWT) issuer.</li>
+ <li>Use an API Gateway REST API to invoke the Lambda functions. Configure the JSON Web Token (JWT) issuer to link to the on-premises IdP over the public internet.</li>
+ <li>Use an API Gateway REST API to invoke the Lambda functions. Create an Amazon Cognito identity pool. Create a federation between the identity pool and the on-premises IdP. Set Amazon Cognito as the authorizer.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  D
+</details>
+
+***
+
 294. A company's developer has deployed an application in AWS by using AWS CloudFormation. The CloudFormation stack includes parameters in AWS Systems Manager Parameter Store that the application uses as configuration settings. The application can modify the parameter values.
 
 When the developer updated the stack to create additional resources with tags, the developer noted that the parameter values were reset and that the values ignored the latest changes made by the application. The developer needs to change the way the company deploys the CloudFormation stack. The developer also needs to avoid resetting the parameter values outside the stack.
