@@ -131,6 +131,22 @@ Which combination of steps should the developer take to meet these requirements 
 
 ***
 
+194. A company has copies of customer ID cards in its on-premises system. The company wants the on-premises system to automatically upload the ID card images directly to an Amazon S3 bucket.
+
+What is the MOST secure way to meet this requirement?
+
+<ol type="A">
+ <li>Use the AWS SDK to upload the images to the S3 bucket directly from the on-premises system. Create an IAM user. Attach the user to a policy that includes the s3:PutObject permission. Configure the on-premises system to use the generated access key and secrets to authenticate access to AWS.</li>
+ <li>Use the AWS SDK to upload the images to the S3 bucket directly from the on-premises system. Create an IAM role. Attach the role to a policy that includes the s3:PutObject permission. Configure the on-premises system to use the AssumeRole functionality in the AWS SDK to authenticate access to AWS.</li>
+ <li>Use S3 presigned URLs to upload the images to the S3 bucket directly from the on-premises system. Generate the presigned URLs by using an AWS Lambda function and a private REST API endpoint. Create an AWS Site-to-Site VPN connection between the on-premises network and the VPC to allow the on-premises system to call the API to receive the presigned URLs.</li>
+ <li>Use S3 presigned URLs to upload the images to the S3 bucket directly from the on-premises system. Generate the presigned URLs by using an AWS Lambda function and a public REST API endpoint. Secure the API by adding an Amazon Cognito authorizer. Create a user for the on-premises system to use for authentication to call the API to receive the presigned URLs.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  C
+</details>
+
+***
+
 198. A developer has created an AWS Lambda function that makes queries to an Amazon Aurora MySQL DB instance. When the developer performs a test, the DB instance shows an error for too many connections.
 
 Which solution will meet these requirements with the LEAST operational effort?
