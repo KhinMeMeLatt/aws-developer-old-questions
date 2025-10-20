@@ -620,6 +620,22 @@ What should the developer do to give the Lambda function access to the database?
 
 ***
 
+540. A developer is using AWS CodeDeploy to launch an application onto Amazon EC2 instances. The application deployment fails during testing. The developer notices an IAM_ROLE_PERMISSIONS error code in Amazon CloudWatch logs.
+
+What should the developer do to resolve the error?
+
+<ol type="A">
+ <li>Ensure that the deployment group is using the correct role name for the CodeDeploy service role.</li>
+ <li>Attach the AWSCodeDeployRoleECS policy to the CodeDeploy service role.</li>
+ <li>Attach the AWSCodeDeployRole policy to the CodeDeploy service role.</li>
+ <li>Ensure the CodeDeploy agent is installed and running on all instances in the deployment group.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  C
+</details>
+
+***
+
 543. A company has an AWS Step Functions state machine named myStateMachine. The company configured a service role for Step Functions.
 
 The developer must ensure that only the myStateMachine state machine can assume the service role.
