@@ -63,6 +63,22 @@ How can the developer improve the performance of these requests? (Choose two.)
   A, B
 </details>
 
+***
+
+27. A company experienced partial downtime during the last deployment of a new application. AWS Elastic Beanstalk split the environment's Amazon EC2 instances into batches and deployed a new version one batch at a time after taking them out of service. Therefore, full capacity was not maintained during deployment.
+The developer plans to release a new version of the application, and is looking for a policy that will maintain full capacity and minimize the impact of the failed deployment.
+Which deployment policy should the developer use?
+
+<ol type="A">
+ <li>Immutable</li>
+ <li>All at Once</li>
+ <li>Rolling</li>
+ <li>Rolling with an Additional Batch</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  A
+</details>
+
 ## Old Question 2
 
 1. A company is implementing an application on Amazon EC2 instances. The application needs to process incoming transactions. When the application detects a transaction that is not valid, the application must send a chat message to the company's support team. To send the message, the application needs to retrieve the access token to authenticate by using the chat API.
