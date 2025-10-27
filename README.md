@@ -112,6 +112,24 @@ Which AWS feature should the company use to share and access the files securely?
 
 ***
 
+119. A real-time messaging application uses Amazon API Gateway WebSocket APIs with backend HTTP service. A developer needs to build a feature in the application to identify a client that keeps connecting to and disconnecting from the WebSocket connection. The developer also needs the ability to remove the client.
+
+Which combination of changes should the developer make to the application to meet these requirements? (Choose two.)
+
+<ol type="A">
+ <li>Switch to HTTP APIs in the backend service.</li>
+ <li>Switch to REST APIs in the backend service.</li>
+ <li>Use the callback URL to disconnect the client from the backend service.</li>
+ <li>Add code to track the client status in Amazon ElastiCache in the backend service.</li>
+ <li>Implement $connect and $disconnect routes in the backend service.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  D, E
+</details>
+
+***
+
+
 153. A company uses a custom root certificate authority certificate chain (Root CA Cert) that is 10 KB in size to generate SSL certificates for its on-premises HTTPS endpoints. One of the company’s cloud-based applications has hundreds of AWS Lambda functions that pull data from these endpoints. A developer updated the trust store of the Lambda execution environment to use the Root CA Cert when the Lambda execution environment is initialized. The developer bundled the Root CA Cert as a text file in the Lambda deployment bundle.
 
 After 3 months of development, the Root CA Cert is no longer valid and must be updated. The developer needs a more efficient solution to update the Root CA Cert for all deployed Lambda functions. The solution must not include rebuilding or updating all Lambda functions that use the Root CA Cert. The solution must also work for all development, testing, and production environments. Each environment is managed in a separate AWS account.
