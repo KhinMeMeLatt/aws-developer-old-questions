@@ -128,6 +128,21 @@ What is the MOST operationally efficient solution that meets this requirement?
 
 ***
 
+63. A developer is incorporating AWS X-Ray into an application that handles personal identifiable information (PII). The application is hosted on Amazon EC2 instances. The application trace messages include encrypted PII and go to Amazon CloudWatch. The developer needs to ensure that no PII goes outside of the EC2 instances.
+Which solution will meet these requirements?
+
+<ol type="A">
+ <li>Manually instrument the X-Ray SDK in the application code.</li>
+ <li>Use the X-Ray auto-instrumentation agent.</li>
+ <li>Use Amazon Macie to detect and hide PII. Call the X-Ray API from AWS Lambda.</li>
+ <li>Use AWS Distro for Open Telemetry.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  A
+</details>
+
+***
+
 90. A company moved some of its secure files to a private Amazon S3 bucket that has no public access. The company wants to develop a serverless application that gives its employees the ability to log in and securely share the files with other users.
 
 Which AWS feature should the company use to share and access the files securely?
