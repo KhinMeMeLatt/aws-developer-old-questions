@@ -567,7 +567,7 @@ Which solution will provide the security team with the required notification abo
  <li>Configure AWS Config with the acm-certificate-expiration-check managed rule to run every 24 hours. Create an Amazon EventBridge rule that includes an event pattern that specifies the Config Rules Compliance Change detail type and the configured rule. Set the SNS topic as the EventBridge rule’s target.</li>
 </ol>
 <details><summary>Show Correct Answer</summary>
-  A
+  D
 </details>
 
 ***
