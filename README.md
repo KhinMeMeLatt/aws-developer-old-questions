@@ -830,3 +830,19 @@ Which permissions will meet these requirements?
 </details>
 
 ***
+
+556. A company’s developer needs to activate Amazon CloudWatch Logs Insights for an application’s AWS Lambda functions. The company uses an AWS Serverless Application Model (AWS SAM) template to deploy the application. The SAM template includes a logical resource that is named CloudWatchLogGroup.
+
+How should the developer modify the SAM template to activate CloudWatch Logs Insights for the Lambda functions?
+
+<ol type="A">
+ <li>Add an output named CloudWatchinsightRule that contains a value of the Amazon Resource Name (ARN) for the CloudWatchLogGroup resource.</li>
+ <li>Add a parameter named CloudWatchLogGroupNamePrefix that contains a value of the application name. Reference the new parameter in the CloudWatchLogGroup resource.</li>
+ <li>For each Lambda function, add the layer for the Lambda Insights extension and the CloudWatchLambdaInsightsExecutionRolePolicy AWS managed policy.</li>
+ <li>For each Lambda function, set Tracing mode to Active and add the CloudWatchLambdaInsightsExecutionRolePolicy AWS managed policy.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  C
+</details>
+
+***
