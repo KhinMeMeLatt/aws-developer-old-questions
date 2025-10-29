@@ -191,6 +191,22 @@ Which combination of changes should the developer make to the application to mee
 
 ***
 
+133. A developer needs to store configuration variables for an application. The developer needs to set an expiration date and time for the configuration. The developer wants to receive notifications before the configuration expires.
+
+Which solution will meet these requirements with the LEAST operational overhead?
+
+<ol type="A">
+ <li>Create a standard parameter in AWS Systems Manager Parameter Store. Set Expiration and ExpirationNotification policy types.</li>
+ <li>Create a standard parameter in AWS Systems Manager Parameter Store. Create an AWS Lambda function to expire the configuration and to send Amazon Simple Notification Service (Amazon SNS) notifications.</li>
+ <li>Create an advanced parameter in AWS Systems Manager Parameter Store. Set Expiration and ExpirationNotification policy types.
+</li>
+ <li>Create an advanced parameter in AWS Systems Manager Parameter Store. Create an Amazon EC2 instance with a cron job to expire the configuration and to send notifications.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  C
+</details>
+
+***
 
 153. A company uses a custom root certificate authority certificate chain (Root CA Cert) that is 10 KB in size to generate SSL certificates for its on-premises HTTPS endpoints. One of the company’s cloud-based applications has hundreds of AWS Lambda functions that pull data from these endpoints. A developer updated the trust store of the Lambda execution environment to use the Root CA Cert when the Lambda execution environment is initialized. The developer bundled the Root CA Cert as a text file in the Lambda deployment bundle.
 
