@@ -464,7 +464,7 @@ Which approach will improve performance and MINIMIZE management overhead?
 <li>Deploy Amazon DynamoDB Accelerator (DAX) on Amazon RDS to improve cache performance.</li>
 </ol>
 <details><summary>Show Correct Answer</summary>
-  B
+  C
 </details>
 
 ***
