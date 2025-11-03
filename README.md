@@ -538,6 +538,24 @@ Which solution will provide this query functionality?
 
 ***
 
+490. A company hosts applications on premises. The on-premises servers generate audit logs that are available through an HTTP endpoint.
+
+The company needs an automated solution to regularly ingest and store large volumes of audit data from the on-premises servers. The company also needs to perform queries on the audit data.
+
+Which solution will meet these requirements in the MOST operationally efficient way?
+
+<ol type="A">
+ <li>Export the audit logs. Upload the logs to Amazon S3. Import the logs to an Amazon RDS DB instance.</li>
+ <li>Create an AWS Lambda function to call the HTTP endpoint to fetch audit logs. Configure an Amazon EventBridge scheduled rule to invoke the Lambda function. Configure the Lambda function to push the logs to AWS CloudTrail Lake.</li>
+ <li>Use AWS DataSync to transfer audit logs to an Amazon S3 bucket. Load the logs into an Amazon S3 bucket. Use Amazon Athena to query the bucket.</li>
+ <li>Install the Amazon CloudWatch agent on the on-premises servers. Give the agent the ability to push audit logs to CloudWatch. Use CloudWatch Insights to query the logs.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  B
+</details>
+
+***
+
 499. A company is developing a new application that uses Amazon EC2, Amazon S3, and AWS Lambda resources. The company wants to allow employees to access the AWS Management Console by using existing credentials that the company stores and manages in an on-premises Microsoft Active Directory. Each employee must have a specific level of access to the AWS resources that is based on the employee’s role.
 
 Which solution will meet these requirements with the LEAST operational overhead?
