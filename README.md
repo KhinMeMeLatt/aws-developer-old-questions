@@ -17,6 +17,22 @@ Which AWS service or feature should the developer use to meet this requirement?
 
 ***
 
+13. A company receives food orders from multiple partners. The company has a microservices application that uses Amazon API Gateway APIs with AWS Lambda integration. Each partner sends orders by calling a customized API that is exposed through API Gateway. The API call invokes a shared Lambda function to process the orders.
+Partners need to be notified after the Lambda function processes the orders. Each partner must receive updates for only the partner's own orders. The company wants to add new partners in the future with the fewest code changes possible.
+Which solution will meet these requirements in the MOST scalable way?
+
+<ol type="A">
+ <li>Create a different Amazon Simple Notification Service (Amazon SNS) topic for each partner. Configure the Lambda function to publish messages for each partner to the partner's SNS topic.</li>
+ <li>Create a different Lambda function for each partner. Configure the Lambda function to notify each partner's service endpoint directly.</li>
+ <li>Create an Amazon Simple Notification Service (Amazon SNS) topic. Configure the Lambda function to publish messages with specific attributes to the SNS topic. Subscribe each partner to the SNS topic. Apply the appropriate filter policy to the topic subscriptions.</li>
+ <li>Create one Amazon Simple Notification Service (Amazon SNS) topic. Subscribe all partners to the SNS topic.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  C
+</details>
+
+***
+
 14. A company is using AWS Elastic Beanstalk to deploy a three-tier application. The application uses an Amazon RDS DB instance as the database tier. The company wants to decouple the DB instance from the Elastic Beanstalk environment.
 Which combination of steps should a developer lake to meet this requirement? (Choose two.)
 
