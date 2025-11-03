@@ -880,6 +880,24 @@ Which type of encryption will meet this requirement?
 
 ***
 
+550. A developer is building an application that stores sensitive user data. The application includes an Amazon CloudFront distribution and multiple AWS Lambda functions that handle user requests.
+
+The user requests contain over 20 data fields. Each application transaction contains sensitive data that must be encrypted. Only specific parts of the application need to have the ability to decrypt the data.
+
+Which solution will meet these requirements?
+
+<ol type="A">
+ <li>Associate the CloudFront distribution with a Lambda@Edge function. Configure the function to perform field-level asymmetric encryption by using a user-defined RSA public key that is stored in AWS Key Management Service (AWS KMS).</li>
+ <li>Integrate AWS WAF with CloudFront to protect the sensitive data. Use a Lambda function and self-managed keys to perform the encryption and decryption processes.</li>
+ <li>Configure the CloudFront distribution to use WebSockets by forwarding all viewer request headers to the origin. Create an asymmetric AWS KMS key. Configure the CloudFront distribution to use field-level encryption. Use the AWS KMS key.</li>
+ <li>Configure the cache behavior in the CloudFront distribution to require HTTPS for communication between viewers and CloudFront. Configure GoudFront to require users to access the files by using either signed URLs or signed cookies.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  A
+</details>
+
+***
+
 554. A developer has an application that runs in AWS Account A. The application must retrieve an AWS Secrets Manager secret that is encrypted by an AWS Key Management Service (AWS KMS) key from AWS Account B. The application’s role has permissions to access the secret in Account B.
 
 The developer must add a statement to the KMS key’s key policy to allow the role in Account A to use the KMS key in Account B. The permissions must grant least privilege access to the role.
