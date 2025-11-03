@@ -784,6 +784,24 @@ Which solution will provide the security team with the required notification abo
 
 ***
 
+539. A company uses two AWS accounts: production and development. The company stores data in an Amazon S3 bucket that is in the production account. The data is encrypted with an AWS Key Management Service (AWS KMS) customer managed key. The company plans to copy the data to another S3 bucket that is in the development account.
+
+A developer needs to use a KMS key to encrypt the data in the S3 bucket that is in the development account. The KMS key in the development account must be accessible from the production account,
+
+Which solution will meet these requirements?
+
+<ol type="A">
+ <li>Replicate the customer managed KMS key from the production account to the development account. Specify the production account in the key policy.</li>
+ <li>Create a new customer managed KMS key in the development account. Specify the production account in the key policy.</li>
+ <li>Create a new AWS managed KMS key for Amazon S3 in the development account. Specify the production account in the key policy.</li>
+ <li>Replicate the default AWS managed KMS key for Amazon S3 from the production account to the development account. Specify the production account in the key policy.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  C
+</details>
+
+***
+
 540. A developer is using AWS CodeDeploy to launch an application onto Amazon EC2 instances. The application deployment fails during testing. The developer notices an IAM_ROLE_PERMISSIONS error code in Amazon CloudWatch logs.
 
 What should the developer do to resolve the error?
