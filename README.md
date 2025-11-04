@@ -128,6 +128,21 @@ Which solution will meet these requirements?
 
 ***
 
+11. A company is migrating legacy internal applications to AWS. Leadership wants to rewrite the internal employee directory to use native AWS services. A developer needs to create a solution for storing employee contact details and high-resolution photos for use with the new application.
+Which solution will enable the search and retrieval of each employee's individual details and high-resolution photos using AWS APIs?
+
+<ol type="A">
+ <li>Encode each employee's contact information and photos using Base64. Store the information in an Amazon DynamoDB table using a sort key.</li>
+ <li>Store each employee's contact information in an Amazon DynamoDB table along with the object keys for the photos stored in Amazon S3.</li>
+ <li>Use Amazon Cognito user pools to implement the employee directory in a fully managed software-as-a-service (SaaS) method.</li>
+ <li>Store employee contact information in an Amazon RDS DB instance with the photos stored in Amazon Elastic File System (Amazon EFS).</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  B
+</details>
+
+***
+
 25. A company is migrating an on-premises database to Amazon RDS for MySQL. The company has read-heavy workloads. The company wants to refactor the code to achieve optimum read performance for queries.
 Which solution will meet this requirement with LEAST current and future effort?
 
