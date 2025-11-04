@@ -128,6 +128,21 @@ Which solution will meet these requirements?
 
 ***
 
+25. A company is migrating an on-premises database to Amazon RDS for MySQL. The company has read-heavy workloads. The company wants to refactor the code to achieve optimum read performance for queries.
+Which solution will meet this requirement with LEAST current and future effort?
+
+<ol type="A">
+ <li>Use a multi-AZ Amazon RDS deployment. Increase the number of connections that the code makes to the database or increase the connection pool size if a connection pool is in use.</li>
+ <li>Use a multi-AZ Amazon RDS deployment. Modify the code so that queries access the secondary RDS instance.</li>
+ <li>Deploy Amazon RDS with one or more read replicas. Modify the application code so that queries use the URL for the read replicas.</li>
+ <li>Use open source replication software to create a copy of the MySQL database on an Amazon EC2 instance. Modify the application code so that queries use the IP address of the EC2 instance.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  C
+</details>
+
+***
+
 26. A developer is creating an application that will be deployed on IoT devices. The application will send data to a RESTful API that is deployed as an AWS Lambda function. The application will assign each API request a unique identifier. The volume of API requests from the application can randomly increase at any given time of day.
 During periods of request throttling, the application might need to retry requests. The API must be able to handle duplicate requests without inconsistencies or data loss.
 Which solution will meet these requirements?
