@@ -702,6 +702,22 @@ Which solution will provide the security team with the required notification abo
 
 ***
 
+505. A company is creating a new application that gives users the ability to upload and share short video files. The average size of the video files is 10 MB. After a user uploads a file, a message needs to be placed into an Amazon Simple Queue Service (Amazon SQS) queue so the file can be processed. The files need to be accessible for processing within 5 minutes.
+
+Which solution will meet these requirements MOST cost-effectively?
+
+<ol type="A">
+ <li>Write the files to Amazon S3 Glacier Deep Archive. Add the S3 location of the files to the SQS queue.</li>
+ <li>Write the files to Amazon S3 Standard. Add the S3 location of the files to the SQS queue.</li>
+ <li>Write the files to an Amazon Elastic Block Store (Amazon EBS) General Purpose SSD volume. Add the EBS location of the files to the SQS queue.</li>
+ <li>Write messages that contain the contents of the uploaded files to the SQS queue.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  B
+</details>
+
+***
+
 507. A developer has implemented an AWS Lambda function that inserts new customers into an Amazon RDS database. The function is expected to run hundreds of times each hour. The function and RDS database are in the same VPC. The function is configured to use 512 MB of RAM and is based on the following pseudo code:
      <code>
       def lambda_handler(event, context):
