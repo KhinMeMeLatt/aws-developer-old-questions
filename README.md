@@ -994,6 +994,24 @@ Which type of encryption will meet this requirement?
 
 ***
 
+549. A developer is building an application that consists of many AWS Lambda functions. The Lambda functions connect to a single Amazon RDS database.
+
+The developer needs to implement a solution to store the database credentials securely. When the credentials are updated, the Lambda functions must be able to use the new credentials without requiring a code update or a configuration update.
+
+Which solution will meet these requirements?
+
+<ol type="A">
+ <li>Store the credentials as a secret in AWS Secrets Manager. Access the secret at runtime from within the Lambda functions.</li>
+ <li>Store the credentials as a secret in AWS Secrets Manager. Access the credentials in environment variables by using the containerDefinitions and valueFrom elements in reference to the secret value.</li>
+ <li>Store the credentials as a SecureString parameter in AWS Systems Manager Parameter Store. Add a trigger to pass the credentials to the Lambda functions when the Lambda functions run.</li>
+ <li>Store the credentials as a SecureString parameter in AWS Systems Manager Parameter Store. Add a reference to the parameter in an environment variable in the Lambda functions.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  A
+</details>
+
+***
+
 550. A developer is building an application that stores sensitive user data. The application includes an Amazon CloudFront distribution and multiple AWS Lambda functions that handle user requests.
 
 The user requests contain over 20 data fields. Each application transaction contains sensitive data that must be encrypted. Only specific parts of the application need to have the ability to decrypt the data.
