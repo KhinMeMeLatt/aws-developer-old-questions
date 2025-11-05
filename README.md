@@ -1,6 +1,22 @@
 # aws-developer-old-questions
 ## Old Question 1
 
+1. A gaming website gives users the ability to trade game items with each other on the platform. The platform requires both users' records to be updated and persisted in one transaction. If any update fails, the transaction must roll back.
+Which AWS solution can provide the transactional capability that is required for this feature?
+
+<ol type="A">
+ <li>Amazon DynamoDB with operations made with the Consistent Read parameter set to true</li>
+ <li>Amazon ElastiCache for Memcached with operations made within a transaction block</li>
+ <li>Amazon DynamoDB with reads and writes made by using Transact* operations</li>
+ <li>Amazon Aurora MySQL with operations made within a transaction block</li>
+ <li>Amazon Athena with operations made within a transaction block</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  C
+</details>
+
+***
+
 11. A developer creates a customer managed key for multiple AWS users to encrypt data in Amazon S3. The developer configures Amazon Simple Notification
 Service (Amazon SNS) to publish a message if key deletion is scheduled. The developer needs to preserve any SNS messages that cannot be delivered so that those messages can be reprocessed.
 Which AWS service or feature should the developer use to meet this requirement?
