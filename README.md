@@ -615,6 +615,22 @@ Which solution will meet these requirements with the LEAST operational overhead?
 
 ***
 
+483. A developer is updating an Amazon API Gateway REST API to have a mock endpoint. The developer wants to update the integration request mapping template so the endpoint will respond to mock integration requests with specific HTTP status codes based on various conditions.
+
+Which statement will meet these requirements?
+
+<ol type="A">
+ <li><img src="https://img.examtopics.com/aws-certified-developer-associate-dva-c02/image30.png"></li>
+ <li><img src="https://img.examtopics.com/aws-certified-developer-associate-dva-c02/image31.png"></li>
+ <li><img src="https://img.examtopics.com/aws-certified-developer-associate-dva-c02/image32.png"></li>
+ <li><img src="https://img.examtopics.com/aws-certified-developer-associate-dva-c02/image33.png"></li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  B
+</details>
+
+***
+
 486. A developer is creating an AWS Step Functions state machine to handle an order processing workflow. When the state machine receives an order, the state machine pauses until the order has been confirmed. A record that is added to an Amazon DynamoDB table by another service confirms each order.
 
 The developer must complete the order processing workflow.
