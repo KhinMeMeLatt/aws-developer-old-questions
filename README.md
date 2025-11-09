@@ -759,6 +759,22 @@ Which solution will meet this requirement?
 
 ***
 
+516. A developer needs to configure an AWS Lambda function to make HTTP POST requests to an internal application. The application is in the same AWS account that hosts the function. The internal application runs on Amazon EC2 instances in a private subnet within a VPC.
+
+Which solution will meet these requirements?
+
+<ol type="A">
+ <li>Configure a VPC endpoint to connect to the private subnet. Attach the endpoint to the Lambda function.</li>
+ <li>Attach the Lambda function to the VPC and to the private subnet.</li>
+ <li>Configure a VPN connection between the Lambda function and the private subnet. Attach the VPN to the Lambda function.</li>
+ <li>Configure the VPC route table to include the Lambda function’s IP address.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  B
+</details>
+
+***
+
 519. A developer is writing a mobile application that allows users to view images from an S3 bucket. The users must be able to log in with their Amazon login, as well as supported social media accounts.
 
 How can the developer provide this authentication functionality?
