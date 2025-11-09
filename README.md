@@ -1063,6 +1063,24 @@ Which permissions will meet these requirements?
 
 ***
 
+555. A developer created several AWS Lambda functions that write data to a single Amazon S3 bucket. The developer configured all the Lambda functions to send logs and metrics to Amazon CloudWatch.
+
+The developer receives reports that one of the Lambda functions writes data to the bucket very slowly. The developer needs to measure the latency between the problematic Lambda function and the S3 bucket.
+
+Which solution will meet this requirement?
+
+<ol type="A">
+ <li>Enable AWS X-Ray on the Lambda function. In the generated trace map, select the line between Lambda and Amazon S3.</li>
+ <li>Query the Lambda function’s log file in Amazon CloudWatch Logs Insights. Return the average of the auto-discovered @duration field.</li>
+ <li>Enable CloudWatch Lambda Insights on the function. View the latency graph that CloudWatch Lambda Insights provides.</li>
+ <li>Enable AWS X-Ray on the Lambda function. Select Amazon S3 in the latency graph to view the latency histogram.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  A
+</details>
+
+***
+
 556. A company’s developer needs to activate Amazon CloudWatch Logs Insights for an application’s AWS Lambda functions. The company uses an AWS Serverless Application Model (AWS SAM) template to deploy the application. The SAM template includes a logical resource that is named CloudWatchLogGroup.
 
 How should the developer modify the SAM template to activate CloudWatch Logs Insights for the Lambda functions?
