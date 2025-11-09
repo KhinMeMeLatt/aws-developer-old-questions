@@ -634,6 +634,22 @@ Which solution will meet this requirement?
 
 ***
 
+488. A company is developing a set of AWS Lambda functions to process data. The Lambda functions need to use a common third-party library as a dependency. The library is frequently updated with new features and bug fixes. The company wants to ensure that the Lambda functions always use the latest version of the library.
+
+Which solution will meet these requirements in the MOST operationally efficient way?
+
+<ol type="A">
+ <li>Store the dependency and the function code in an Amazon S3 bucket.</li>
+ <li>Create a Lambda layer that includes the library. Attach the layer to each Lambda function.</li>
+ <li>Install the dependency in an Amazon Elastic File System (Amazon EFS) file system. Attach the file system to each Lambda function.</li>
+ <li>Create a new Lambda function to load the library. Configure the existing Lambda functions to invoke the new Lambda function when the existing functions need to use the library.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  C
+</details>
+
+***
+
 489. A company’s application includes an Amazon DynamoDB table for product orders. The table has a primary partition key of orderId and has no sort key. The company is adding a new feature that requires the application to query the table by using the customerId attribute.
 
 Which solution will provide this query functionality?
