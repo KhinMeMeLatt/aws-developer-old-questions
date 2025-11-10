@@ -523,6 +523,23 @@ How can the developer achieve this with MINIMAL impact on users?
 
 ***
 
+439. A developer is creating a solution to track an account's Amazon S3 buckets over time. The developer has created an AWS Lambda function that will run on a schedule. The function will list the account's S3 buckets and will store the list in an Amazon DynamoDB table. The developer receives a permissions error when the developer runs the function with the AWSLambdaBasicExecutionRole AWS managed policy.
+
+Which combination of permissions should the developer use to resolve this error? (Choose two.)
+
+<ol type="A">
+ <li>Cross-account IAM role</li>
+ <li>Permission for the Lambda function to list buckets in Amazon S3</li>
+ <li>Permission for the Lambda function to write in DynamoDB</li>
+ <li>Permission for Amazon S3 to invoke the Lambda function</li>
+ <li>Permission for DynamoDB to invoke the Lambda function</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  B, C
+</details>
+
+***
+
 445. A developer is creating a script to automate the deployment process for a serverless application. The developer wants to use an existing AWS Serverless Application Model (AWS SAM) template for the application.
 
 What should the developer use for the project? (Choose two.)
