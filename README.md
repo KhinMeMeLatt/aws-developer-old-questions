@@ -556,6 +556,22 @@ Which solution will meet these requirements?
 
 ***
 
+453. A company is developing a serverless application that requires storage of sensitive API keys as environment variables for various services. The application requires the automatic rotation of the encryption keys every year.
+
+Which solution will meet these requirements with no development effort?
+
+<ol type="A">
+ <li>Encrypt the environment variables by using AWS Secrets Manager. Set up automatic rotation in Secrets Manager.</li>
+ <li>Encrypt the environment variables by using AWS Key Management Service (AWS KMS) customer managed keys. Enable automatic key rotation.</li>
+ <li>Encrypt the environment variables by using AWS Key Management Service (AWS KMS) AWS managed keys. Configure a custom AWS Lambda function to automate key rotation.</li>
+ <li>Encrypt the environment variables by using AWS Systems Manager Parameter Store. Set up automatic rotation in Parameter Store.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  B
+</details>
+
+***
+
 454. A developer built an application that uses AWS Lambda functions to process images. The developer wants to improve image processing times throughout the day.
 
 The developer needs to create an Amazon CloudWatch Logs Insights query that shows the average, slowest, and fastest processing time in 1-minute intervals.
