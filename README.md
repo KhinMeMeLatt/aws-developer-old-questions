@@ -269,6 +269,22 @@ Which combination of changes should the developer make to the application to mee
 
 ***
 
+131. A company is developing an ecommerce application that uses Amazon API Gateway APIs. The application uses AWS Lambda as a backend. The company needs to test the code in a dedicated, monitored test environment before the company releases the code to the production environment.
+
+Which solution will meet these requirements?
+
+<ol type="A">
+ <li>Use a single stage in API Gateway. Create a Lambda function for each environment. Configure API clients to send a query parameter that indicates the environment and the specific Lambda function.</li>
+ <li>Use multiple stages in API Gateway. Create a single Lambda function for all environments. Add different code blocks for different environments in the Lambda function based on Lambda environment variables.</li>
+ <li>Use multiple stages in API Gateway. Create a Lambda function for each environment. Configure API Gateway stage variables to route traffic to the Lambda function in different environments.</li>
+ <li>Use a single stage in API Gateway. Configure API clients to send a query parameter that indicates the environment. Add different code blocks for different environments in the Lambda function to match the value of the query parameter.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  C
+</details>
+
+***
+
 133. A developer needs to store configuration variables for an application. The developer needs to set an expiration date and time for the configuration. The developer wants to receive notifications before the configuration expires.
 
 Which solution will meet these requirements with the LEAST operational overhead?
