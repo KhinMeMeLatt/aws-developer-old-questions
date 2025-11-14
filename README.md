@@ -1260,3 +1260,19 @@ How should the developer modify the SAM template to activate CloudWatch Logs Ins
 </details>
 
 ***
+
+557. A developer is designing a game that stores data in an Amazon DynamoDB table. The partition key of the table is the country of the player. After a sudden increase in the number of players in a specific country, the developer notices ProvisionedThroughputExceededException errors.
+
+What should the developer do to resolve these errors?
+
+<ol type="A">
+ <li>Use strongly consistent table reads.</li>
+ <li>Revise the primary key to use more unique identifiers.</li>
+ <li>Use pagination to reduce the size of the items that the queries return.</li>
+ <li>Use the Scan operation to retrieve the data.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  B
+</details>
+
+***
