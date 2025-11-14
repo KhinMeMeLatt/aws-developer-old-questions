@@ -252,6 +252,22 @@ Which AWS feature should the company use to share and access the files securely?
 
 ***
 
+109. A developer wants to use AWS Elastic Beanstalk to test a new version of an application in a test environment.
+
+Which deployment method offers the FASTEST deployment?
+
+<ol type="A">
+ <li>Immutable</li>
+ <li>Rolling</li>
+ <li>Rolling with additional batch</li>
+ <li>All at once</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  D
+</details>
+
+***
+
 119. A real-time messaging application uses Amazon API Gateway WebSocket APIs with backend HTTP service. A developer needs to build a feature in the application to identify a client that keeps connecting to and disconnecting from the WebSocket connection. The developer also needs the ability to remove the client.
 
 Which combination of changes should the developer make to the application to meet these requirements? (Choose two.)
