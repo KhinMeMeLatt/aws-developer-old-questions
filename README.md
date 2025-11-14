@@ -1143,6 +1143,7 @@ Which statement should the developer add to the trust policy to meet this requir
 </details>
 
 ***
+
 547. A developer is designing an event-driven architecture. An AWS Lambda function that processes data needs to push processed data to a subset of four consumer Lambda functions. The data must be routed based on the value of one field in the data.
 
 Which solution will meet these requirements with the LEAST operational overhead?
@@ -1209,6 +1210,25 @@ Which solution will meet these requirements?
 </details>
 
 ***
+
+553. A company is creating a new feature for existing software. Before the company fully releases a new version of the software, the company wants to test the feature.
+
+The company needs to gather feedback about the feature from a small group of users while the current software version remains deployed. If the testing validates the feature, the company needs to deploy the new software version to all other users at the same time.
+
+Which deployment strategy will meet these requirements?
+
+<ol type="A">
+ <li>All-at-once deployment</li>
+ <li>Canary deployment</li>
+ <li>In-place deployment</li>
+ <li>Linear deployment</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  B
+</details>
+
+***
+
 
 554. A developer has an application that runs in AWS Account A. The application must retrieve an AWS Secrets Manager secret that is encrypted by an AWS Key Management Service (AWS KMS) key from AWS Account B. The application’s role has permissions to access the secret in Account B.
 
