@@ -590,6 +590,24 @@ How can the developer achieve this with MINIMAL impact on users?
 
 ***
 
+437. A company has an ecommerce platform. A developer is designing an Amazon DynamoDB table to store customer order data for the platform. The table uses the order ID as the partition key.
+
+The developer needs to modify the table to get all order IDs that are associated with a given customer email address in a single query. The solution must give the developer the ability to query order IDs by other item attributes in the future.
+
+Which solution will meet these requirements?
+
+<ol type="A">
+ <li>Configure the partition key to use the customer email address as the sort key.</li>
+ <li>Update the table to use the customer email address as the partition key.</li>
+ <li>Create a local secondary index (LSI) with the customer email address as the sort key.</li>
+ <li>Create a global secondary index (GSI) with the customer email address as the partition key.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  D
+</details>
+
+***
+
 439. A developer is creating a solution to track an account's Amazon S3 buckets over time. The developer has created an AWS Lambda function that will run on a schedule. The function will list the account's S3 buckets and will store the list in an Amazon DynamoDB table. The developer receives a permissions error when the developer runs the function with the AWSLambdaBasicExecutionRole AWS managed policy.
 
 Which combination of permissions should the developer use to resolve this error? (Choose two.)
