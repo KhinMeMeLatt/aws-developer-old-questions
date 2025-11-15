@@ -624,6 +624,24 @@ What should the developer use for the project? (Choose two.)
 
 ***
 
+446. A developer adds new dependencies to an existing AWS Lambda function. The developer cannot deploy the Lambda function because the unzipped deployment package exceeds the maximum size quota for the Lambda function. The instruction set architecture of the Lambda function is x86_64.
+
+The developer must implement a solution to deploy the Lambda function with the new dependencies.
+
+Which solution will meet these requirements?
+
+<ol type="A">
+ <li>Create a snapshot of all the dependencies. Configure the Lambda function to use the snapshot.</li>
+ <li>Change the instruction set architecture of the Lambda function to use an arm64 architecture.</li>
+ <li>Associate an Amazon Elastic Block Store (Amazon EBS) volume with the Lambda function. Store all the dependencies on the EBS volume.</li>
+ <li>Create and deploy a Lambda container image with all the dependencies.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  D
+</details>
+
+***
+
 449. A developer is creating a web application to upload and store private data. The application will encrypt private data and then will upload the data to an Amazon S3 bucket.
 
 The developer needs to implement a solution to automatically find any unencrypted private data in the S3 bucket. The solution must monitor the security and access control of the S3 bucket and must provide a notification if there are any security issues.
