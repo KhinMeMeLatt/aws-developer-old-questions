@@ -923,6 +923,24 @@ Which solution will meet these requirements?
 
 ***
 
+517. A company has an application that processes audio files for different departments. When audio files are saved to an Amazon S3 bucket, an AWS Lambda function receives an event notification and processes the audio input.
+
+A developer needs to update the solution so that the application can process the audio files for each department independently. The application must publish the audio file location for each department to each department's existing Amazon Simple Queue Service (Amazon SQS) queue.
+
+Which solution will meet these requirements with no changes to the Lambda function code?
+
+<ol type="A">
+ <li>Configure the S3 bucket to send the event notifications to an Amazon Simple Notification Service (Amazon SNS) topic. Subscribe each department’s SQS queue to the SNS topic. Configure subscription filter policies.</li>
+ <li>Update the Lambda function to write the file location to a single shared SQS queue. Configure the shared SQS queue to send the file reference to each department’s SQS queue.</li>
+ <li>Update the Lambda function to send the file location to each department’s SQS queue.</li>
+ <li>Configure the S3 bucket to send the event notifications to each department’s SQS queue.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  A
+</details>
+
+***
+
 519. A developer is writing a mobile application that allows users to view images from an S3 bucket. The users must be able to log in with their Amazon login, as well as supported social media accounts.
 
 How can the developer provide this authentication functionality?
