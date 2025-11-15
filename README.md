@@ -956,6 +956,24 @@ Which steps should be taken to achieve this? (Choose two.)
 
 ****
 
+529. A developer is building an image-processing application that includes an AWS Lambda function. The Lambda function moves images from one AWS service to another AWS service for image processing. For images that are larger than 2 MB, the Lambda function returns the following error: “Task timed out after 3.01 seconds.”
+
+The developer needs to resolve the error without modifying the Lambda function code.
+
+Which solution will meet these requirements?
+
+<ol type="A">
+ <li>Increase the Lambda function’s timeout value.</li>
+ <li>Configure the Lambda function to not move images that are larger than 2 MB.</li>
+ <li>Request a concurrency quota increase for the Lambda function.</li>
+ <li>Configure provisioned concurrency for the Lambda function.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  A
+</details>
+
+****
+
 530. A developer has an application container, an AWS Lambda function, and an Amazon Simple Queue Service (Amazon SQS) queue. The Lambda function uses the SQS queue as an event source. The Lambda function makes a call to a third-party machine learning API when the function is invoked. The response from the third-party API can take up to 60 seconds to return.
 
 The Lambda function's timeout value is currently 65 seconds. The developer has noticed that the Lambda function sometimes processes duplicate messages from the SQS queue.
