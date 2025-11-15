@@ -1211,6 +1211,26 @@ Which solution will meet these requirements?
 
 ***
 
+552. A company stores data in an Amazon S3 bucket. The data is updated multiple times every day from an application that runs on a server in the company’s on-premises data center.
+
+The company enables S3 Versioning on the S3 bucket. After some time, the company observes multiple versions of the same objects in the S3 bucket.
+
+The company needs the S3 bucket to keep the current version of each object and the version immediately previous to the current version.
+
+Which solution will meet these requirements?
+
+<ol type="A">
+ <li>Configure an S3 bucket policy to retain one newer noncurrent version of the objects.</li>
+ <li>Configure an S3 Lifecycle rule to retain one newer noncurrent version of the objects.</li>
+ <li>Enable S3 Object Lock. Configure an S3 Object Lock policy to retain one newer noncurrent version of the objects.</li>
+ <li>Suspend S3 Versioning. Modify the application code to check the number of object versions before updating the objects.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  B
+</details>
+
+***
+
 553. A company is creating a new feature for existing software. Before the company fully releases a new version of the software, the company wants to test the feature.
 
 The company needs to gather feedback about the feature from a small group of users while the current software version remains deployed. If the testing validates the feature, the company needs to deploy the new software version to all other users at the same time.
