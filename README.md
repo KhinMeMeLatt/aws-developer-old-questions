@@ -624,6 +624,24 @@ What should the developer use for the project? (Choose two.)
 
 ***
 
+449. A developer is creating a web application to upload and store private data. The application will encrypt private data and then will upload the data to an Amazon S3 bucket.
+
+The developer needs to implement a solution to automatically find any unencrypted private data in the S3 bucket. The solution must monitor the security and access control of the S3 bucket and must provide a notification if there are any security issues.
+
+Which solution will meet these requirements?
+
+<ol type="A">
+ <li>Use AWS Step Functions to run Amazon Athena queries. Configure Athena to find unencrypted private data and to monitor for security issues in the S3 bucket. Start the queries when new objects are added to the S3 bucket. Configure Athena to provide a notification if security issues are detected.</li>
+ <li>Enable Amazon Macie for the S3 bucket. Set up custom criteria to find unencrypted private data in the S3 bucket. Set up AWS User Notifications to provide a notification when Macie detects security issues.</li>
+ <li>Enable Amazon Inspector for the AWS account. Use Amazon Inspector to scan the S3 bucket to find unencrypted private data and to monitor for security issues. Set up Amazon EventBridge to provide a notification when Amazon Inspector detects security issues.</li>
+ <li>Create an Amazon Kinesis data stream. Configure Amazon S3 to send new object notifications to the stream. Create an AWS Lambda function that runs every 10 minutes to check the stream for unencrypted private data and to monitor for security issues. Program the Lambda function to provide a notification when security issues are detected.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  B
+</details>
+
+***
+
 451. A developer is using an AWS Lambda function to process data. The developer needs to extract custom metrics about processing times from the Lambda logs. The developer needs to analyze the metrics, set alarms, and detect issues in real time.
 
 Which solution will meet these requirements?
