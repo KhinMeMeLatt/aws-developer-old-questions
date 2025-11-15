@@ -956,6 +956,24 @@ Which steps should be taken to achieve this? (Choose two.)
 
 ****
 
+530. A developer has an application container, an AWS Lambda function, and an Amazon Simple Queue Service (Amazon SQS) queue. The Lambda function uses the SQS queue as an event source. The Lambda function makes a call to a third-party machine learning API when the function is invoked. The response from the third-party API can take up to 60 seconds to return.
+
+The Lambda function's timeout value is currently 65 seconds. The developer has noticed that the Lambda function sometimes processes duplicate messages from the SQS queue.
+
+What should the developer do to ensure that the Lambda function does not process duplicate messages?
+
+<ol type="A">
+ <li>Configure the Lambda function with a larger amount of memory.</li>
+ <li>Configure an increase in the Lambda function’s timeout value.</li>
+ <li>Configure the SQS queue’s delivery delay value to be greater than the maximum time it takes to call the third-party API.</li>
+ <li>Configure the SQS queue’s visibility timeout value to be greater than the maximum time it takes to call the third-party API.</li>
+</ol>
+<details><summary>Show Correct Answer</summary>
+  D
+</details>
+
+****
+
 533. A developer is deploying an application on an Amazon Elastic Container Service (Amazon ECS) cluster that uses AWS Fargate. The developer is using a Docker container with an Ubuntu image.
 
 The developer needs to implement a solution to store application data that is available from multiple ECS tasks. The application data must remain accessible after the container is terminated.
